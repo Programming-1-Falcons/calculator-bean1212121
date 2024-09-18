@@ -1,0 +1,31 @@
+def calculate(operation, num1, num2):
+#Perform the calculation based on operation
+  if operation == 'add':
+    return num1 + num2
+  elif operation == 'substract':
+    return num1 - num2
+  elif operation == 'multiply':
+    return num1 * num2
+  elif operation == 'divide':
+    if num2 == 0:
+      return "Error: Division by zero is undefined."
+    return num1 / num2
+  elif operation == 'exponent':
+    return num1 ** num2
+  else:
+    return "Error: Invalid operation."
+while True:
+#get user input for operation
+    operation = input("Enter operation (add, subtract, multiply, divide, exponent) or 'exit' to quit: ")
+    if operation == 'exit'
+      break
+#Get user input for numbers
+  try:
+    num1 = float(input("enter first number: ")
+    num2 = float(input("enter second number: ")
+  except ValueError:
+    print("Error: Please enter valid numbers.")
+    continue
+#Calculate and display result
+  result= calculate(operation, num1, num2)
+  print(f"{num1} {operation} {num2} = {result}")
